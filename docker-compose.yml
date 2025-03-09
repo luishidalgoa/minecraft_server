@@ -1,6 +1,6 @@
 services:
   minecraft:
-    image: minecraft
+    image: luishidalgoa/mc_create_cobblemon:1.21.1
     container_name: minecraft
     volumes:
       - ./world:/minecraft/world
