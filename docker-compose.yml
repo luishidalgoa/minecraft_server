@@ -1,0 +1,12 @@
+services:
+  minecraft:
+    image: minecraft
+    container_name: minecraft
+    volumes:
+      - ./world:/minecraft/world
+      - ./mods:/minecraft/mods
+      - ./resourcepacks:/minecraft/resourcepacks
+    ports:
+      - "25565:25565"
+    stdin_open: true  # Mantiene el contenedor abierto para la interacción
+    tty: true  # Habilita el modo de consola para interactuar
