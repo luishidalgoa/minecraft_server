@@ -9,11 +9,9 @@
 3. **Detener el contenedor**
    - Una vez que el servidor haya arrancado correctamente y generado los archivos iniciales, detén el contenedor pulsando `crt` + `D`
 
-4. **Mover las carpetas originales**
-   - descomprime los ficheros `mods`, `world`, y `resourcepacks` en el directorio actual
-
-5. **Arrancar nuevamente el contenedor**
-   - Vuelve a ejecutar el contenedor con el comando `docker-compose up -d` para que los archivos de `mods`, `world`, y `resourcepacks` sean utilizados por el servidor.
+4. **Integrar mods , partidas guardadas y resourcepacks** 
+   - Si deseas que tu servidor tenga mods, un mundo ya creado y resourcepacks puedes introducirle los datos dentro de los directorios mods, resourcepacks, world
+   que se habran generado en el directorio del repositorio
 
 6. **Interacción con el contenedor**
    - Para interactuar con el contenedor del servidor, ejecuta el script `minecraft.sh`. Este script automáticamente ejecutará los comandos necesarios para interactuar con el contenedor y facilitar la administración del servidor de Minecraft.
